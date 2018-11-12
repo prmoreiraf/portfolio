@@ -1,0 +1,367 @@
+html,
+body {
+  font-smoothing: antialiased;
+  height: 100%;
+  margin: 0;
+}
+
+.header{
+  background-color: #fff;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container-sobre{
+	float: left;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.container{
+	float: left;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.bio{
+	font-size: 21px;
+  font-family: AppleGaramond;
+}
+
+.margin-t10{
+  margin-top: 10px;
+}
+
+.text-center{
+	text-align: center;
+  
+}
+.titulo{
+	font-size: 45px;
+}
+.titulo2{
+  font-size: 25px;
+}
+.descricao{
+	float:right;
+}
+.background1{
+	background-color: #d3cdcd;
+}
+
+.imagemdescricao{
+	float: left;
+
+}
+.foto1{
+	float: left;
+	overflow: hidden;
+	height:500px; 
+	width:50%;
+	background-color: blue;
+	margin:150px;
+	margin-top: 0px;
+	box-sizing: border-box;
+	/*background-image: url(fotodescricao.jpg);*/
+	background-position: center top;
+}
+.texto1{
+	float: left;
+	height:500px; 
+	width:50%;
+	box-sizing: border-box;
+	font-size: 35px;
+	
+}
+.margin-t200{
+  margin-top: -200px;
+}
+.margin-t180{
+  margin-top: -180px;
+}
+.texto1 p {
+	margin:-6px;
+
+}
+.nome{
+	transform: rotate(-90deg);
+	transform-origin: left center 0px; 
+	align-content: left;
+  margin: 0; 
+  font-size: 27px;
+  font-family: AppleGaramond;
+  margin-left: -30px; 
+  text-align: center; 
+  -webkit-transform: rotate(-90deg);
+  margin-right: 15px;
+}
+
+.clearfix{
+  clear:both
+}
+
+.logos{
+  padding: 5px;
+  width: 60px;
+}
+/************slider***************/
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  /*margin: 0;*/
+  padding: 0;
+  list-style: none;
+  margin-top: 30px;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 300px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 800;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+/******MAIL******/
+input[type=text], textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; /* Somente permite aumentar a caixa verticalmente */
+}
+
+.textarea{
+  height: 310px;
+}
+.container-mail {
+  border-radius: 5px;
+  width: 350px;
+  margin-top: 40px;
+}
+
+button[type=submit] {
+  background-color: #8e8e8e;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+button[type=submit]:hover {
+  background-color: #222426;
+}
+/**************MODAL*****************/
+.modal,
+.modal-box {
+  z-index: 900;
+}
+
+.modal-sandbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,.8);
+  overflow: auto;
+}
+
+.modal-box {
+  position: relative;
+  width: 80%;
+  max-width: 920px;
+  margin: 100px auto;
+  animation-name: modalbox;
+  animation-duration: .4s;
+  animation-timing-function: cubic-bezier(0,0,.3,1.6);
+}
+
+.modal-header {
+  padding: 20px 40px;
+  background: #000;
+  color: #ffffff;
+}
+
+.modal-body {
+  background: #d3cdcd;
+  padding: 60px 40px;
+}
+
+/* Close Button */
+.close-modal {
+  text-align: right;
+  cursor: pointer;
+
+}
+
+/* Animation */
+@-webkit-keyframes modalbox {
+  0% {
+    top: -250px; 
+    opacity: 0;
+  }
+  100% {
+    top: 0; 
+    opacity: 1;
+  }
+}
+
+@keyframes modalbox {
+  0% {
+    top: -250px; 
+    opacity: 0;
+  }
+  100% {
+    top: 0; 
+    opacity: 1;
+  }
+}
+
+/* Aditional Styles */
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+p {
+  line-height: 1.4em;
+}
+
+body {
+  background: transparent;
+}
+
+.modal-trigger, button {
+  top: 50%;
+  left: 50%;
+  padding: 20px 40px;
+}
+
+.modal-trigger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: ease .2s;
+}
+
+button {
+  border: 1px solid #333333;
+  outline: none;
+  color: #333333;
+}
+
+
+.img{
+  width: 100%;
+  
+}
+
+span:hover{
+  cursor: pointer;
+}
+
+.img-modal{
+  width: 500px;
+  padding-top: 100px;
+}
+/***************fontes******************/
+@font-face{
+    font-family: AppleGaramond;
+    src: url(AppleGaramond.ttf);
+    font-family: Edwardian;
+    src: url(Edwardian.ttf);
+}
+.font-edwardian{
+  font-family: Edwardian;
+  font-size: 150px;
+}
+
+.font-apple{
+  font-family: AppleGaramond;
+  font-size: 80px;
+}
+
+/***************divisorias********************/
+.topo{
+    width: 100%;
+  
+}
+.chao{
+  width:100%;
+  background-color: #d3cdcd;
+}
+.divisoria{
+  width: 100%;
+
+  margin-top: -300px;
+
+}
