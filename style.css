@@ -362,6 +362,15 @@ span:hover{
 .divisoria{
   width: 100%;
 
-  margin-top: -300px;
+}
 
+.margin-t300{
+  margin-top: -300px;
+}
+.gambiarra{
+  background-color: #fff;
+}
+.gambiarra2{
+  background-color: #d3cdcd;
+}
 }
