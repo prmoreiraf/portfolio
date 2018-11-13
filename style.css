@@ -386,3 +386,7 @@ span:hover{
 .font-h1{
   font-size: 2em;
 }
+.font-pinyon{
+  font-family: 'Pinyon Script', cursive;
+  font-size: 150px;
+}
