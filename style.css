@@ -338,7 +338,7 @@ span:hover{
     font-family: AppleGaramond;
     src: url(AppleGaramond.ttf);
     font-family: Edwardian;
-    src: url(Edwardian.ttf);
+    src: url(edwardian.ttf);
 }
 .font-edwardian{
   font-family: Edwardian;
@@ -382,4 +382,7 @@ span:hover{
 }
 .margin-b5{
   margin-bottom:-5px;
+}
+.font-h1{
+  font-size: 2em;
 }
